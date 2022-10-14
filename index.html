@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel SS">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <title>NavBar Template</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: #ddd;
+        }
+
+        /* OBS: Barra de navegação */
+        .content {
+            display: flex;
+            height: 100vh;
+            width: 300px;
+            background-color: #1f1f1f;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            transition: .7s ease-in-out;
+        }
+
+        .content li {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+
+        .content li a {
+            color: #ccc;
+            font-family: 'Open Sans';
+            font-family: 'Roboto';
+            margin: 10px;
+            transition: all .2s;
+            padding: 7px;
+            font-size: .9em;
+        }
+
+        .content li a:hover {
+            border-bottom: 1px solid rgb(2, 179, 231);
+        }
+
+        img {
+            width: 150px;
+            margin: 15px 0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        #checkbox-menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0;
+            z-index: +2;
+            border: 1px solid red;
+        }
+
+        label {
+            display: block;
+            position: relative;
+            margin: 20px;
+            height: 22px;
+            width: 30px;
+        }
+
+        label span {
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 80%;
+            background-color: #02b3e7;
+            transition: .25s ease-in-out;
+            border-radius: 100px;
+            z-index: +2;
+        }
+
+        label span:nth-child(1) {
+            top: 0;
+        }
+
+        label span:nth-child(2) {
+            top: 8px;
+        }
+
+        label span:nth-child(3) {
+            top: 16px;
+        }
+
+        /* O seletor permite selecionar um ou mais elementos com base em sua ordem de acordo com uma fórmula. :nth-child. Assim :nth-child(1) seleciona o primeiro span */
+        #checkbox-menu:checked+label span:nth-child(1) {
+            transform: rotate(-45deg);
+            top: 8px;
+            background-color: #02b3e7;
+        }
+
+        /* O :nth-child(2) seleciona o segundo span */
+        #checkbox-menu:checked+label span:nth-child(2) {
+            opacity: 0;
+        }
+
+        /* O :nth-child(2) seleciona o terceiro span */
+        #checkbox-menu:checked+label span:nth-child(3) {
+            transform: rotate(45deg);
+            top: 8px;
+            background-color: #02b3e7;
+            z-index: +2;
+        }
+
+        #checkbox-menu:checked+label+.content {
+            position: fixed;
+            left: 0;
+            transition: 1s ease-in-out;
+        }
+
+        /* RESPONSIVIDADE SETANDO um intervalo de tela para celulares com display menor */
+        /* OBS: Significa que de 320px a 600px, o css irá ter esse comportamento setado */
+        @media screen and (min-width: 320px) and (max-width: 600px) {
+            .content {
+                width: 100px;
+                left: -100px;
+            }
+
+            img {
+                width: 60px;
+            }
+
+            .content li a {
+                transition: ease .2s;
+                font-size: .5em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <input type="checkbox" name="botão" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="content">
+                <img src="imagens/logo.png" alt="Logo DEV PRO">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+</body>
+
+</html>
