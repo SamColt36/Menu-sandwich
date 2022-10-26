@@ -1,5 +1,5 @@
-template | navbar1.0
- # INTERFACE DE UPLOAD DE ARQUIVOS
+template | menu
+ # Menu sandwich
 
 
 
@@ -7,10 +7,12 @@ template | navbar1.0
 
 ## Proposta 
 
-Criar uma interface de upload de arquivos como parte do Projeto de Extensão I da faculdade. É por meio desse formulário que o usuário captará informações de hardware e software do sistema final do cliente e enviará para o email cadastrado. O formulário está totalmente funcional, e utiliza apenas html e css. No tocante ao tratamento dos dados foi usado o formsubmit.co (<https://formsubmit.co/>).
+Criar menu sandwich somente com html e css
 
-## FORMSUBMIT.COM
+## Dificuldades
 
-Easy form endpoints for your HTML forms
-Connect your form to our form endpoint and we’ll email you the submissions. No PHP, Javascript or any backend code required.
-O FormSubmit entregou mais de 12.194.733 submissões de formulários enviados através de 80.839 sites cadastrados.
+Pseudo-elementos.
+
+## Conclusões
+
+Para criar o botão sandwich foi interessante usar os próprios recursos html, como por exemplo o uso de spans ao ínves de usar um ícone de alguma biblioteca.
