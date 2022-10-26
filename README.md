@@ -15,4 +15,4 @@ Pseudo-elementos.
 
 ## Conclusões
 
-Para criar o botão sandwich foi interessante usar os próprios recursos html, como por exemplo o uso de spans ao ínves de usar um ícone de alguma biblioteca.
+Para criar o botão sandwich foi interessante usar os próprios recursos html, como por exemplo o uso de spans ao ínves de recorer a ícones de biblioteca ou imagens.
