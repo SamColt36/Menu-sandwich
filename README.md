@@ -1,18 +1,8 @@
-template | menu
- # Menu sandwich
+# INTERFACE DE UPLOAD DE ARQUIVOS
+#### Feito por Samuel SS, Fortaleza  Brasil
 
+Criar menu sandwich somente com HTML e CSS.
+## Contextualização
 
-
-##### Feito por Samuel SS, Fortaleza  Brasil
-
-## Proposta 
-
-Criar menu sandwich somente com html e css
-
-## Dificuldades
-
-Pseudo-elementos.
-
-## Conclusões
-
-Para criar o botão sandwich foi interessante usar os próprios recursos html, como por exemplo o uso de spans ao ínves de recorer a ícones de biblioteca ou imagens.
+Senti dificuldade com a utilização de pseudo-elementos e pseudo-classes.
+>Conclusão: Para criar o botão sandwich foi interessante usar os próprios recursos HTML, como por exemplo o uso de spans ao invés de recorrer a ícones de biblioteca ou imagens.
